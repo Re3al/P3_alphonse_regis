@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/base/_base.scss","../../sass/utils/_variables.scss"],"names":[],"mappings":"AACA,KACI,sBACA,MCHa","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/base/_base.scss","../../sass/utils/_variables.scss","../../sass/base/_typography.scss"],"names":[],"mappings":"AACA,KACI,sBACA,MCHa,OCCb,gCACA,gBACA,eACA","file":"style.css"}
