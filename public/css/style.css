@@ -1,26 +1,58 @@
+@charset "UTF-8";
+/*@mixin background-grey($porcent){
+          background-color: darken($color-bg, $porcent);
+    }
+*/
 body {
   width: 100%;
   margin: 0px;
   padding: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
-img {
+.restaurants img {
   max-width: 200px;
 }
 
+i {
+  display: block;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-color: #ececec;
+}
+
+.booking {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
 h1 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 900;
-  font-size: 5rem;
-  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.3rem;
+  line-height: 32px;
+}
+
+button {
+  background: linear-gradient(to top, #a85ddb, #e671da);
+  padding: 13px 36px;
+  color: white;
+  border: none;
+  border-radius: 20px;
 }
 
 header {
   width: 100%;
   background-color: #fff;
-  box-shadow: 10px 5px 5px #e5e5e5;
+  box-shadow: 10px 5px 5px #dfdfdf;
   padding: 20px 0px;
   text-align: center;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

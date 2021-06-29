@@ -3,9 +3,27 @@ body {
     width: 100%;   
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 //Style temporaire
-img{
+.restaurants  img{
     max-width: 200px;
 }
 //fin temp
+i{
+    display: block;
+}
+.location
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-color: #ececec;
+}
+.booking
+{
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
