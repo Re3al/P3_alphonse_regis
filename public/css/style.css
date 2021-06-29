@@ -10,10 +10,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.restaurants img {
-  max-width: 200px;
-}
-
 i {
   display: block;
 }
@@ -22,14 +18,108 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
   background-color: #ececec;
 }
 
 .booking {
-  background-color: #f8f8f8;
-  padding: 20px;
+  position: relative;
   text-align: center;
+}
+
+.fonctionnement_step {
+  margin-bottom: 13px;
+}
+
+.fonctionnement_step > p {
+  position: absolute;
+}
+
+.fonctionnement_step div {
+  display: flex;
+  width: 85%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ececec;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  padding: 12px 0px;
+  font-weight: 700;
+}
+
+.fonctionnement_step div i {
+  margin-right: 20px;
+}
+
+.fonctionnement_step_number {
+  position: absolute;
+  left: -8%;
+  padding: 7px 12px;
+  border-radius: 23px;
+  background: linear-gradient(to top, #a85ddb, #e671da);
+  font-size: 17px;
+  color: white;
+}
+
+section {
+  text-align: center;
+}
+
+.menu-card {
+  width: 90%;
+  display: flex;
+  margin: 20px auto;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px #acacac;
+  border-radius: 20px;
+}
+
+.menu-card {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.menu-card img {
+  border-radius: 20px;
+  height: 225px;
+  object-fit: cover;
+}
+
+.menu-card__information {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+  margin: 10px auto;
+}
+
+.menu-card h4, .menu-card p {
+  margin: 0;
+}
+
+.new {
+  position: absolute;
+  background-color: #99e2d0;
+  width: 40%;
+  padding: 12px;
+  color: #129273;
+  top: 20px;
+  right: 10px;
+}
+
+.restaurants {
+  background-color: #ececec;
+  padding: 30px 0;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer svg {
+  fill: white;
 }
 
 h1 {
