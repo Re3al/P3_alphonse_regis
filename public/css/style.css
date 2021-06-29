@@ -10,6 +10,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 i {
   display: block;
 }
@@ -151,6 +156,15 @@ section {
     width: 80%;
     margin: auto;
   }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+  }
 }
 h1 {
   font-family: "Roboto", sans-serif;
@@ -182,6 +196,13 @@ footer img {
 footer {
   background-color: black;
   color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  display: block;
+  padding: 30px;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
