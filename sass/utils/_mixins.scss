@@ -1,4 +1,3 @@
-/*@mixin background-grey($porcent){
-          background-color: darken($color-bg, $porcent);
-    }
-*/
+@mixin background-grey($percent) {
+    background-color: darken($color-bg, $percent);
+}

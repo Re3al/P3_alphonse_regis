@@ -1,0 +1,30 @@
+.hero_banner img
+{
+    width: 100%;
+}
+.carte_du_restaurant
+{
+    background-color: #ececec;
+    position: relative;
+    top: -30px;
+    border-radius: 25px;
+    padding: 10px;
+
+}
+.heading
+{
+    display: flex;
+    width: 92%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    font-family: Shrikhand, serif;   
+}
+.carte_du_restaurant h3
+{
+    text-align: left;
+    color: grey;
+    border-bottom: 2px solid #99e2d0;
+    width: 23px;
+    font-weight: 400;   
+}
