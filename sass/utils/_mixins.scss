@@ -1,3 +1,7 @@
 @mixin background-grey($percent) {
     background-color: darken($color-bg, $percent);
 }
+
+
+@mixin desktop-version {
+    @media screen and (min-width: map-get($breakpoints, desktop)){@content;}}

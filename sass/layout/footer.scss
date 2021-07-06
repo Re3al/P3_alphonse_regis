@@ -5,6 +5,7 @@ footer img{
 footer{
     background-color: black;
     color: white;
+    padding: 20px;
 }
 
 footer ul{
@@ -12,4 +13,23 @@ footer ul{
     display: block;
     padding: 30px;
     margin: 0px
+}
+
+@media (min-width: 1024px) {
+    footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer img {
+        margin: auto;
+    }
+    footer ul {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin: auto;
+    }
 }

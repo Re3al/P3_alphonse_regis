@@ -4,9 +4,9 @@ body {
   padding: 0px;
   font-family: "Roboto", sans-serif;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 i {
   display: block;
@@ -16,6 +16,7 @@ i {
   justify-content: center;
   align-items: center;
   background-color: #ececec;
+  padding: 20px;
 }
 .booking {
   position: relative;
@@ -107,57 +108,61 @@ section {
   padding: 30px 0;
 }
 
-.restaurant_card
-{
+.restaurant_card {
   display: flex;
   justify-content: space-between;
   background-color: white;
   border-radius: 20px;
-  padding: 5px;
-  align-items: flex-end;
+  padding: 0;
+  align-items: center;
   box-shadow: 2px 2px 10px #acacac;
-  h4, p{
-    margin: 0px;
+  height: 70px;
+  margin: 15px 0;
+
+  &_description {
+    text-align: left;
+    padding-left: 20px;
   }
 }
-
-
+h4,
+p {
+  margin: 0px;
+}
 
 @media (min-width: 1024px) {
-    .fonctionnement {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 30px auto;
-    }
+  .fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px auto;
+  }
   .fonctionnement_step {
     margin-bottom: 13px;
     width: 325px;
-}
-.menu-card {
+  }
+  .menu-card {
     display: flex;
     justify-content: space-around;
     position: relative;
     width: 30%;
-}
-.restaurants {
+  }
+  .restaurants {
     background-color: white;
     padding: 30px 0;
     display: flex;
-}
-.restaurants > div{
+  }
+  .restaurants > div {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     margin: auto;
-}
-ul {
+  }
+  ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     width: 60%;
     margin: auto;
     padding: 40px;
-}
-
+  }
 }
