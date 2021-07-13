@@ -5,4 +5,49 @@ button
     color: white;
     border: none;
     border-radius: 20px;
+    position: relative;
     }
+.btn
+{
+    &:active
+    {
+        animation: move 3s both 6 ease-in-out alternate, 
+         jump 3s 1.2s ease;
+    opacity: 1;
+    }
+}
+
+//exemple d'animation 
+@keyframes move{
+    0%{
+        transform: translateX(0);
+       
+    }
+    30%{
+        opacity: 1;
+       
+    }
+    60%{
+        opacity: 0;
+       
+    }
+    100%{
+        transform: translateX(200px);
+        opacity: 1;
+
+
+    }
+}
+
+@keyframes jump
+{
+    0%{
+        bottom:0;
+    }
+    50%{
+        bottom:100px;
+    }
+    100%{
+        bottom:0;
+    }
+}
