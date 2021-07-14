@@ -1,5 +1,5 @@
 @mixin background-grey($percent) {
-    background-color: darken($color-bg, $percent);
+    background-color: lighten($color-bg, $percent);
 }
 
 

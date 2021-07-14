@@ -46,8 +46,7 @@ i {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: #ececec;
-  background-color: black;
+  background-color: #efefef;
   margin: auto;
   border-radius: 10px;
   position: relative;
@@ -99,6 +98,14 @@ section {
   justify-content: space-between;
   width: 92%;
   margin: 10px auto;
+}
+
+.menu-card__information .heart-container {
+  position: relative;
+}
+
+.menu-card__information .heart-container i {
+  position: a;
 }
 
 .menu-card h4,
@@ -258,6 +265,52 @@ footer ul {
     justify-content: space-between;
     text-align: center;
     margin: auto;
+  }
+}
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  display: none;
+  background-color: #5e5e5e;
+}
+.overlay {
+  animation-name: overlay-apparition;
+  animation-duration: 4s;
+  display: block;
+}
+.overlay i {
+  color: white;
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  animation: spin 2s infinite;
+  opacity: 1;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes overlay-apparition {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
 .hero_banner img {

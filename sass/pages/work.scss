@@ -1,3 +1,53 @@
+.overlay
+{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  display: none;
+  @include background-grey(20%);
+  &{
+      animation-name:overlay-apparition;
+      animation-duration: 4s;
+      display: block;
+  }
+      & i{
+          color: white;
+          position: relative;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          font-size: 20px;
+          animation: spin 2s infinite;
+          opacity: 1; 
+  }
+}
+@keyframes spinner
+{
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+@keyframes overlay-apparition
+{
+    0%{
+        opacity: 1;
+        
+    }
+    80%{
+        opacity: 1;
+        
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
 .hero_banner img
 {
     width: 100%;

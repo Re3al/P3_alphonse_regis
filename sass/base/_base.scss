@@ -4,6 +4,7 @@ body {
   padding: 0px;
   font-family: "Roboto", sans-serif;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -39,8 +40,8 @@ i {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: #ececec;
-  @include background-grey(20%);
+
+  @include background-grey(77%);
   margin: auto;
   border-radius: 10px;
   position: relative;
@@ -89,6 +90,12 @@ section {
   justify-content: space-between;
   width: 92%;
   margin: 10px auto;
+}
+.menu-card__information .heart-container {
+  position: relative;
+}
+.menu-card__information .heart-container i {
+  position: a;
 }
 .menu-card h4,
 .menu-card p {
