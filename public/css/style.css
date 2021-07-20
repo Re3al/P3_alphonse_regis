@@ -277,7 +277,10 @@ footer ul {
 }
 .overlay {
   animation-name: overlay-apparition;
-  animation-duration: 4s;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   display: block;
 }
 .overlay i {
@@ -296,6 +299,10 @@ footer ul {
     transform: rotate(0deg);
     opacity: 1;
   }
+  80% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
   100% {
     transform: rotate(360deg);
     opacity: 0;
@@ -305,12 +312,8 @@ footer ul {
   0% {
     opacity: 1;
   }
-  80% {
-    opacity: 1;
-  }
   100% {
     opacity: 0;
-    display: none;
   }
 }
 .hero_banner img {
