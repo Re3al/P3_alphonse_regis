@@ -83,6 +83,7 @@ section {
   border-radius: 20px;
   height: 225px;
   object-fit: cover;
+  width: 100%;
 }
 
 .menu-card__information {
@@ -93,9 +94,38 @@ section {
 }
 .menu-card__information .heart-container {
   position: relative;
+  & .fas {
+    background: #fff;
+    background: linear-gradient(to top, #a85ddb, #e671da);
+    -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; 
+    opacity: 0;  
+    &:hover
+    {
+      animation: fade-heart 0.75s ease forwards alternate;
+    }
+
+  }
+}
+.menu-card__information .heart-container  .far:hover
+{
+  opacity: 0;
+
 }
 .menu-card__information .heart-container i {
-  position: a;
+  position: absolute;
+  right: 7px;
+}
+@keyframes fade-heart
+{
+  0% {
+    opacity: 0;
+    
+}
+100% {
+    opacity: 1;
+ 
+}
 }
 .menu-card h4,
 .menu-card p {
@@ -137,6 +167,7 @@ p {
     justify-content: space-around;
     position: relative;
     width: 30%;
+    margin: 20px 50px;
   }
   .restaurants {
     background-color: white;
