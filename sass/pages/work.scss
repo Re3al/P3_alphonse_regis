@@ -39,7 +39,8 @@
 
     100%{
         transform: rotate(360deg);
-        opacity: 0;
+        
+        
 
         
     }
@@ -61,7 +62,7 @@
 
     100%{
         opacity: 0;
-        transform: translateX(100%);
+        z-index: -1;
         
     }
 }
@@ -109,6 +110,14 @@
     font-weight: 600;
     
 }
+
+.restaurant_card_description p
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 260px;
+}
 .restaurant_card {
     display: flex;
     justify-content: space-between;
@@ -120,14 +129,19 @@
     height: 70px;
     margin: 15px 0;
     animation: arrival 1.5s 0.1s;
-    animation-delay: 1.5s;
+        animation-delay: 1.5s;
+    &:nth-child(1n+1)
+    {
+        animation: arrival 1.5s 0.1s;
+        animation-delay: 2s;
+    }
     &_description {
       text-align: left;
       padding-left: 20px;
     }
     
     &:hover > .picto_anime{
-        animation: progressive-apparition 0.5s 3s ease-in-out alternate;
+        animation: progressive-apparition 0.5s ease-in-out alternate;
         display: block;
         & i{
             animation:spin 0.5s ease-in ;
